@@ -14,8 +14,8 @@ header {
 }
 
 header img {
-    max-width: 20%;
-    max-height: 20%;
+  max-width: 20%;
+  max-height: 20%;
 }
 
 nav ul {
@@ -40,4 +40,13 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #E86299;
+}
+
+footer {
+  background-color: #69878A;
+  padding-right: 5rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
