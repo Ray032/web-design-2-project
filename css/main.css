@@ -2,20 +2,27 @@
   box-sizing: inherit;
 }
 
+body:first-child {
+  z-index: -1;
+}
+
 header {
   background-color: #7BB9CE;
   padding-right: 2rem;
   padding-left: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.125rem;
 }
 
 header img {
   max-width: 20%;
   max-height: 20%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -42,8 +49,73 @@ nav ul li a:hover {
   color: #E86299;
 }
 
+.merchandise {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: 100%;
+  background-color: #E86299;
+  display: block;
+  min-height: 200px;
+  width: 100%;
+}
+
+.banner {
+  background-image: url('../images/hero-banner.svg');
+  height: 75vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: pink;
+}
+
+.merchandise {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.store {
+  background-color: #E86299;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  font-size: 4.5em;
+  gap: 2em;
+
+}
+
+.icons div i, .icons div a {
+  color: white;
+  font-size: 5rem;
+
+}
+
+.icons {
+  background-color: #E86299;
+}
+
+.music-release {
+  justify-content: center;
+  background-color: #E86299;
+  color: white;
+  border-radius: #B14B74;
+
+}
+
 footer {
   background-color: #69878A;
+  color: white;
   padding-right: 5rem;
   padding-left: 2rem;
   display: flex;
