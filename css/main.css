@@ -7,7 +7,7 @@ body:first-child {
 }
 
 header {
-  background-color: #7BB9CE;
+  background-color: #7ec2cd;
   padding-right: 2rem;
   padding-left: 2rem;
   font-size: 1.125rem;
@@ -76,9 +76,17 @@ nav ul li a:hover {
   grid-auto-flow: dense;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 25px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 60px auto;
   max-width: 800px;
+}
+
+.merchandise img {
+  border: 9px solid #B14B74;
+}
+
+.merchandise h2 {
+  text-align: center;
 }
 
 .store {
@@ -110,7 +118,6 @@ nav ul li a:hover {
   background-color: #E86299;
   color: white;
   border-radius: #B14B74;
-
 }
 
 footer {
