@@ -60,6 +60,10 @@ nav ul li a:hover {
   width: 100%;
 }
 
+.about {
+  text-align: center;
+}
+
 .banner {
   background-image: url('../images/hero-banner.svg');
   height: 75vh;
@@ -81,17 +85,55 @@ nav ul li a:hover {
   max-width: 800px;
 }
 
-.merchandise img {
-  border: 9px solid #B14B74;
-}
-
 .merchandise h2 {
   text-align: center;
 }
 
-.store {
+.albums {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.albums img {
+  border: 9px solid #B14B74;
+}
+
+.albums h2 {
+  text-align: center;
+}
+
+.famous-albums {
   background-color: #E86299;
   color: white;
+}
+
+.famous-albums h2 {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.banner-2 {
+  background-image: url('../images/banner.svg');
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: #7BB9CE;
+}
+
+.grid {
+  margin: 1em 2em 0 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
 }
 
 .icons {
@@ -114,9 +156,7 @@ nav ul li a:hover {
 }
 
 .music-release {
-  justify-content: center;
-  background-color: #E86299;
-  color: white;
+  text-align: center;
   border-radius: #B14B74;
 }
 
